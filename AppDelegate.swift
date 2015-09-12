@@ -21,6 +21,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Parse.setApplicationId(kParseApplicationID, clientKey: kParseClientKey);
         
+        Reservation.registerSubclass();
+        Resource.registerSubclass();
+        AUser.registerSubclass();
+        Certification.registerSubclass();
+        Group.registerSubclass();
+        WaitList.registerSubclass();
+        Company.registerSubclass();
+        
         return true
     }
 
